@@ -5,6 +5,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="formapply bg-white border shadow-sm">
+                        <div class="close">
+                            <router-link to="/" class="text-white"><i class="mdi mdi-close"></i></router-link>
+                        </div>
                         <div class="text-center">
                             <router-link to="/"><img src="../../assets/l.png" width="150" height="150" class="img-fluid" alt=""></router-link>
                         </div>

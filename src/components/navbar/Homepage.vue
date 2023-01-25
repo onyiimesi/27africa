@@ -1,14 +1,9 @@
 <template>
   <div class="navbody">
-    <nav class="navbar navbar-expand-lg navbarcolor">
+    <nav class="navbar fixed-top navbar-expand-lg navbarcolor">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img
-            src="../../assets/Group1.png"
-            width="250"
-            height="250"
-            class="img-fluid"
-            alt=""
+          ><img src="../../assets/Group1.svg" class="img-fluid" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -53,27 +48,41 @@
       </div>
     </nav>
 
-    <div class="banner">
+    <div class="banner mb-5">
       <div class="container textbanner">
-        <div class="row col-lg-12 py-5 my-5 ban text-center">
-          <img src="../../assets/27Africa.gif" class="mt-5" />
-          <div>
-            <router-link to="/apply"
-              ><button class="btn Btn2">
-                Apply For Funding &nbsp;&nbsp;
-                <img
-                  src="../../assets/Vector.png"
-                  class="img-fluid"
-                  width="7"
-                  height="7"
-                  alt=""
-                /></button
-            ></router-link>
+        <div class="row ban text-center">
+          <div class="col-md-12 bb">
+            <div class="rocket">
+              <img src="../../assets/Group1630.svg" alt="" />
+            </div>
+            <div>
+              <img src="../../assets/27Africa.gif" class="img-fluid" />
+            </div>
+            <div class="lines">
+              <img src="../../assets/Vector1.svg" alt="" />
+            </div>
+            <div>
+              <router-link to="/apply"
+                ><button class="btn Btn2">
+                  Apply For Funding &nbsp;&nbsp;
+                  <img
+                    src="../../assets/Vector.png"
+                    class="img-fluid"
+                    width="7"
+                    height="7"
+                    alt=""
+                  /></button
+              ></router-link>
+            </div>
           </div>
-          <!-- <div class="bgimg">
-            <img src="../../assets/Vector1.png " />
-          </div> -->
         </div>
+      </div>
+      <div class="bgimg">
+        <img
+          src="../../assets/Waves.svg "
+          style="width: 100%; height: 100%"
+          class="img-fluid mt-5"
+        />
       </div>
     </div>
   </div>
@@ -88,41 +97,21 @@
     </div>
 
     <div class="row text-center mb-5">
-      <div class="col-md-3">
-        <img
-          src="../../assets/Property1.svg"
-          class="img-fluid mb-3 mt-3"
-          width="120"
-          height="120"
-        />
-        <h6>Petme</h6>
+      <div class="col-md-3 petme">
+        <h6 class="mt-5 py-3" style="position: relative; top: 30px">Petme</h6>
       </div>
-      <div class="col-md-3">
-        <img
-          src="../../assets/Vector.svg"
-          class="img-fluid mb-3"
-          width="70"
-          height="70"
-        />
-        <h6>Wayamoney</h6>
+      <div class="col-md-3 hover">
+        <h6 class="mt-5 py-3" style="position: relative; top: 30px">
+          Wayamoney
+        </h6>
       </div>
-      <div class="col-md-3">
-        <img
-          src="../../assets/Bloom.svg"
-          class="img-fluid mb-3"
-          width="100"
-          height="100"
-        />
-        <h6>Bloom Finance</h6>
+      <div class="col-md-3 Bloom">
+        <h6 class="mt-5 py-3" style="position: relative; top: 30px">
+          Bloom Finance
+        </h6>
       </div>
-      <div class="col-md-3">
-        <img
-          src="../../assets/Property.svg"
-          class="img-fluid mb-3"
-          width="50"
-          height="50"
-        />
-        <h6>Effex</h6>
+      <div class="col-md-3 effex-img">
+        <h6 class="mt-5 py-3" style="position: relative; top: 30px">Effex</h6>
       </div>
     </div>
   </div>
@@ -130,13 +119,13 @@
   <div class="numbers">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 circle-bg">
           <div class="service">
             <img src="../../assets/Rectangle7.png" class="img-fluid mt-3" />
           </div>
         </div>
 
-        <div class="col-md-6 textNumbers">
+        <div class="col-md-6 textNumbers bg-images">
           <h4 class="text-center mt-3">Our Numbers</h4>
           <p style="text-align: center; font-size: 16px">
             27 Africa invests in young resourceful founders that have shown grit
@@ -168,7 +157,7 @@
 
   <div class="section2">
     <div class="container mt-5">
-      <div class="row">
+      <div class="row cardbg">
         <div class="col-md-4">
           <div class="card mt-5">
             <div class="card-body cc">
@@ -272,11 +261,16 @@
             <img src="../../assets/Group672.png" class="img-fluid" alt="" />
           </div>
           <div class="foot">
-            <p>
+            <h6>
               We are a Venture Capital firm supercharged with supporting next
               gen African Innovators
-            </p>
-            <span>©2022 27Africa, All Rights Reserved</span>
+            </h6>
+            <span style="color: #d3a12d"
+              >©2022 27Africa, All Rights Reserved</span
+            ><br />
+            <span
+              >Made with <img src="../../assets/love.svg" />from Africa</span
+            >
           </div>
         </div>
 
@@ -307,12 +301,20 @@
         <div class="col-md-3 mb-4">
           <div class="foot social">
             <h6>Follow Us</h6>
-            <ul>
-              <li><router-link to="">facebook</router-link></li>
-              <li><router-link to="">twitter</router-link></li>
-              <li><router-link to="">instagram</router-link></li>
-              <li><router-link to="">linkdin</router-link></li>
-            </ul>
+
+            <router-link to="">
+              <img src="../../assets/Vector2.svg"
+            /></router-link>
+            <router-link to="">
+              <img src="../../assets/Vector3.svg" class="px-1"
+            /></router-link>
+            <router-link to="">
+              <img src="../../assets/Vector7.svg" class="px-1"
+            /></router-link>
+            <router-link to="">
+              <img src="../../assets/Vector54.svg" class="px-1"
+            /></router-link>
+
             <p>Sign Up for Newsletter</p>
             <form action="">
               <input type="text" placeholder="Enter your email address" />

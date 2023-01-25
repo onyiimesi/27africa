@@ -1,91 +1,67 @@
 /* color palette from <https://github.com/vuejs/theme> */
-:root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
-
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
-}
-
-body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "RelishPro";
 }
 body {
   box-sizing: border-box;
 }
 .nav-link {
-  color: #000000;
+  color: #0d3b34;
+}
+.nav-item:hover {
+  background: rgba(211, 161, 45, 0.25);
+  opacity: 1.5;
+  color: #0d3b34;
+}
+.petme {
+  background-image: url(../assets/Property22.svg);
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  background-position: center;
+}
+.petme:hover {
+  background-image: url(../assets/Property1.svg);
+}
+.effex-img {
+  background-image: url(../assets/Property.svg);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: center;
+}
+.effex-img:hover {
+  background-image: url(../assets/Property55.png);
+}
+.Bloom {
+  background-image: url(../assets/Bloom.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: center;
+}
+.Bloom:hover {
+  background-image: url(../assets/Bloom_Identity.png);
+}
+.hover {
+  background-image: url(../assets/vector.svg);
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  background-position: center;
+}
+.hover:hover {
+  background-image: url(../assets/Vector71.png);
 }
 .navbody {
-  box-sizing: border-box;
   background: #ebfbef;
-  opacity: 0.85;
+  padding: 8px 0 0 0;
+  opacity: 0.9;
   border-radius: 15px;
 }
-
+.navbody {
+  background-image: url(../assets/Icons.png);
+}
+.bigimg {
+  padding: 150px;
+  background-image: url(../assets/Vector1.png);
+}
 .Btn {
   width: auto;
   height: auto;
@@ -100,9 +76,10 @@ body {
 }
 .navbarcolor {
   background: #ebfbef;
+  background-size: auto;
   width: 100%;
+
   height: auto;
-  opacity: 0.85;
 }
 .navtextcolor {
   color: #000000;
@@ -133,6 +110,11 @@ body {
   color: #0d3b34;
   font-size: 14px;
 }
+.cardbg {
+  background-image: url(../assets/Waves1.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
 .banner > .textbanner > .ban > h4 {
   width: 80rem;
   height: 134px;
@@ -149,6 +131,18 @@ body {
   background: #fff4db;
   padding: 80px 0;
 }
+
+/* .circle-bg {
+  background-image: url(../assets/Ellipse17.png);
+  background-position: left top;
+  background-repeat: repeat-y;
+}
+.bg-images {
+  background-image: url(../assets/Rectangle100.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+ */
 .section2 {
   padding: 80px 0;
   background: #ebfbef;
@@ -194,7 +188,7 @@ body {
   color: #fff;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   background-color: #000 !important;
   color: #fff !important;
 }
@@ -212,6 +206,7 @@ body {
   background-color: #0d3b34;
   border-radius: 35.267px;
   padding: 20px 100px;
+  background-image: url(../assets/Maskgroup.svg);
 }
 .apply .app p {
   color: #fff;
@@ -292,18 +287,23 @@ body {
 }
 .applying .formapply {
   background-color: #fff;
+
   padding: 50px 80px;
   border-radius: 8px;
+  position: relative;
 }
+
 .applying .formapply h4 {
   font-weight: 600;
   font-size: 20px;
+  font-family: "Inter";
   line-height: 24px;
   color: #0d3b34;
 }
 .applying .formapply p {
   font-weight: 400;
   font-size: 13px;
+  font-family: "inter";
   line-height: 20px;
   text-align: center;
   color: #0d3b34;
@@ -344,15 +344,76 @@ body {
   font-weight: 700;
 }
 
+.applying .formapply .close {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: #ccc;
+  padding: 2px 5px;
+}
+
+.banner {
+  margin: 150px 0 0 0;
+}
+
+.bb {
+  position: relative;
+}
+.bb .lines {
+  margin: 0 0 0 40%;
+}
+.bb .rocket {
+  position: absolute;
+  top: -70px;
+  left: 200px;
+  z-index: -99;
+}
+
 .service img {
   box-shadow: -10px 10px 0 0px #3b3b3b;
 }
-@media only screen and (min-width: 480px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bb .rocket img {
+    width: 70px;
+    height: 140px;
+  }
+  .lines > img {
+    width: 70px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .bb .rocket img {
+    width: 40px;
+    height: 80px;
+  }
+  .bb .rocket {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    z-index: -99;
+  }
+}
+@media only screen and (max-width: 480px) {
   .video {
     margin: 40px 0 0;
   }
   .Btn2 {
     margin: 100px 0;
+  }
+  .bb .rocket img {
+    width: 40px;
+    height: 80px;
+  }
+  .bb .rocket {
+    position: absolute;
+    top: -35px;
+    left: 80px;
+    z-index: -99;
   }
 }
 @media only screen and(min-width:900px) {
@@ -376,12 +437,13 @@ body {
     font-size: 10px;
     margin-top: -10px;
   }
-  .textHeader>h6{
-    text-align:center;
-    font-size:10px;
-  
+  .textHeader > h6 {
+    text-align: center;
+    font-size: 10px;
   }
-  .card{
-    
+  .lines img {
+    width: 200px;
+    height: 140px;
+    margin: -100px 0;
   }
 }

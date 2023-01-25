@@ -1,10 +1,15 @@
 <template>
 
     <div class="applying">
+        
         <div class="container">
+            
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="formapply border shadow-sm">
+                        <div class="close">
+                            <router-link to="/" class="text-white"><i class="mdi mdi-close"></i></router-link>
+                        </div>
                         <div class="text-center">
                             <router-link to="/"><img src="../../assets/Group1.png" width="250" height="250" class="img-fluid" alt=""></router-link>
                         </div>
